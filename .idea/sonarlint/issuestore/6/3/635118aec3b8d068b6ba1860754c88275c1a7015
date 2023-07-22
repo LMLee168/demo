@@ -1,0 +1,11 @@
+
+|
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰8ôùŠŒ…1
+
+java:S1149&"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(„»è¼øÿÿÿÿ8õùŠŒ…1
+|
+java:S1149B"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰8€ø¿‘…1
+
+java:S1149N"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(„»è¼øÿÿÿÿ8€ø¿‘…1
+\
+java:S1118":Add a private constructor to hide the implicit public one.(û½æÀÿÿÿÿÿ8õùŠŒ…1

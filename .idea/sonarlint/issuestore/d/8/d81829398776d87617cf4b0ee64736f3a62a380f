@@ -1,0 +1,25 @@
+
+V	java:S106€"9Replace this use of System.out or System.err by a logger.(°€8üÒÑ/
+V	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(ãÏ¶ô8üÒÑ/
+[	java:S106‚"9Replace this use of System.out or System.err by a logger.(çŸ—ÿûÿÿÿÿ8üÒÑ/
+S
+java:S2692,"10 is a valid index, but is ignored by this check.(äÊåîùÿÿÿÿ8üÒÑ/
+d
+java:S2259'"BA "NullPointerException" could be thrown; "inet" is nullable here.(¾¤¿‹üÿÿÿÿ8üÒÑ/
+V	java:S106…"9Replace this use of System.out or System.err by a logger.(¿İü‡8üÒÑ/
+r	java:S117Y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”ıß™ıÿÿÿÿ8üÒÑ/
+V	java:S106"9Replace this use of System.out or System.err by a logger.(²ˆÔ¤8üÒÑ/
+j
+java:S1192"HDefine a constant instead of duplicating this literal "unknown" 5 times.(í¾şèÿÿÿÿÿ8üÒÑ/
+J
+java:S1481L"(Remove this unused "val" local variable.(Ó˜œùøÿÿÿÿ8üÒÑ/
+A
+java:S26295"$Invoke method(s) only conditionally.(ÂÚø8¢î¥Ñ/
+m	java:S117X"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»íÎ»8üÒÑ/
+d
+java:S1192€"FDefine a constant instead of duplicating this literal "0.8.8" 6 times.(°€8üÒÑ/
+Q
+java:S1066,"/Merge this if statement with the enclosing one.(äÊåîùÿÿÿÿ8üÒÑ/
+V	java:S106„"9Replace this use of System.out or System.err by a logger.(µ‹Åı8üÒÑ/
+F
+java:S2629;"$Invoke method(s) only conditionally.(¢íìüÿÿÿÿ8ß†¦Ñ/
