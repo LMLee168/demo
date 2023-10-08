@@ -23,7 +23,7 @@ public class TbkTpwdConvertAggZtkRequest extends SavvyBuyRequest {
     //淘客PID : mm_631370037_2366600350_111482500415
     private String pid = "mm_631370037_2366600350_111482500415";
     /**
-     * 对象ztk里授权的id
+     * 对应ztk里授权的id
      */
     private String sid= "165690";
     //渠道关系ID，仅适用于渠道推广场景。

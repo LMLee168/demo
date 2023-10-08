@@ -18,7 +18,7 @@ import java.util.Map;
 @Component
 public class OfficialManager {
 
-    private static final String defaultMsg = "查询失败，该商品暂无优惠券！" ;
+    private static final String defaultMsg = "查询失败，该商品暂无优惠！" ;
 
     @Resource
     private Map<String, SavvyBuyProvider> savvyBuyProviderMap;
