@@ -1,0 +1,6 @@
+
+t	java:S116"SRename this field "num_iids" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õ¯’Ëøÿÿÿÿ8ÀØšÜ†1
+x	java:S116"WRename this field "biz_scene_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şÆæıÿÿÿÿ8ÀØšÜ†1
+z	java:S116"YRename this field "promotion_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…Òª×úÿÿÿÿ8ÀØšÜ†1
+r	java:S116!"VRename this field "relation_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ­ò8Åâ›Ü†1
+y	java:S116%"]Rename this field "manage_item_pub_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®—ªİ8å™Ü†1

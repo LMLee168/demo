@@ -1,0 +1,12 @@
+
+M
+java:S1068
+"+Remove this unused "version" private field.(³ρωÿÿÿÿ8΅»°Ρ/
+I
+java:S1068",Remove this unused "platform" private field.(—φ8΅»°Ρ/
+I
+java:S1068",Remove this unused "deviceId" private field.(Α¤ά8΅»°Ρ/
+P
+java:S1068".Remove this unused "deviceType" private field.(τΨύÿÿÿÿ8΅»°Ρ/
+T
+java:S1068"2Remove this unused "tanshuDeviceId" private field.(‘ιτύÿÿÿÿ8τ±Ρ/

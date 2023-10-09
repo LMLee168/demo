@@ -1,0 +1,33 @@
+
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ú˜Á¦8«Š¤‰…1
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(´•„É8¬Š¤‰…1
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¾«ÎÎ8¬Š¤‰…1
+{	java:S115	"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(œçéÂúÿÿÿÿ8¬Š¤‰…1
+{	java:S115
+"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ô¢öúÿÿÿÿ8¬Š¤‰…1
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ñ”ó•ıÿÿÿÿ8¬Š¤‰…1
+u	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ø” \8¬Š¤‰…1
+u	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ã”ğj8¬Š¤‰…1
+?
+java:S1165"Make this "code" field final.(ßı²’ÿÿÿÿÿ8­Š¤‰…1
+g
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Î¦éûÿÿÿÿ8°Š¤‰…1
+b
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ú˜Á¦8°Š¤‰…1
+b
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(´•„É8°Š¤‰…1
+b
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¾«ÎÎ8±Š¤‰…1
+g
+java:S1124	"EReorder the modifiers to comply with the Java Language Specification.(œçéÂúÿÿÿÿ8±Š¤‰…1
+g
+java:S1124
+"EReorder the modifiers to comply with the Java Language Specification.(ô¢öúÿÿÿÿ8±Š¤‰…1
+g
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ñ”ó•ıÿÿÿÿ8±Š¤‰…1
+a
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ø” \8±Š¤‰…1
+a
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ã”ğj8±Š¤‰…1
+]	java:S125"<This block of commented-out lines of code should be removed.(Œú¬’şÿÿÿÿ8±Š¤‰…1
+X	java:S125'"<This block of commented-out lines of code should be removed.(ÛºŞÔ8³Š¤‰…1

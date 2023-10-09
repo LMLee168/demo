@@ -1,0 +1,5 @@
+
+q	java:S116"URename this field "ToUserName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦œã®8Ô¥•¸…1
+x	java:S116"WRename this field "FromUserName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö¬”öýÿÿÿÿ8Õ¥•¸…1
+q	java:S116"URename this field "CreateTime" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸŒ€¨8Õ¥•¸…1
+s	java:S116"RRename this field "MsgType" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜äŸ×ÿÿÿÿÿ8Õ¥•¸…1
