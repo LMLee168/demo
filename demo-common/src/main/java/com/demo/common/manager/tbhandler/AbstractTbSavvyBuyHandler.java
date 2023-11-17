@@ -20,6 +20,7 @@ public abstract class AbstractTbSavvyBuyHandler<Request extends SavvyBuyRequest,
 
     private static final String GET = "GET";
     private static final String POST = "post";
+    private static final String GET_JSON = "getJson";
 
 
 
@@ -36,6 +37,9 @@ public abstract class AbstractTbSavvyBuyHandler<Request extends SavvyBuyRequest,
             }
             if (POST.equalsIgnoreCase(apiConfig.getMethod())) {
                 jsonResult = HttpUtil.doPost(url, params);
+            }
+            if (GET_JSON.equalsIgnoreCase(apiConfig.getMethod())) {
+                jsonResult = HttpUtil.doGetJson(url, params);
             }
         } catch (Exception e) {
             log.error("request tbk error. url:{}, params:{}", url,

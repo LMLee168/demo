@@ -1,12 +1,6 @@
 package com.demo.common.manager;
 
-import com.alibaba.fastjson.JSON;
-import com.demo.common.manager.jdhandler.JdGoodsPromotiongoodsinfoQueryHandler;
-import com.demo.common.manager.jdhandler.UnionOpenPromotionBysubunionidGetHandler;
 import com.demo.common.manager.tbhandler.*;
-import com.demo.common.model.request.jd.PromotionCodeReq;
-import com.demo.common.model.request.jd.UnionOpenGoodsPromotiongoodsinfoQueryRequest;
-import com.demo.common.model.request.jd.UnionOpenPromotionBysubunionidGetRequest;
 import com.demo.common.model.request.tb.*;
 import com.demo.common.model.response.PromotionAgg;
 import com.demo.common.model.response.jd.*;
@@ -42,7 +36,12 @@ public class CommonTbManager {
     private TbkItemClickExtractHandler tbkItemClickExtractHandler;
     @Resource
     private TbkTpwdConvertAggZtkHandler tbkTpwdConvertAggZtkHandler;
+    @Resource
+    private ZtkItemOrderQueryHandler ztkItemOrderQueryHandler;
 
+    /**
+     * 单个商品 q 和 adzone_id
+     */
     public TbkDgMaterialOptionalResponse materialOptional() {
         TbkDgMaterialOptionalRequest request = new TbkDgMaterialOptionalRequest();
         request.setAdzone_id(111482500415L);
@@ -142,7 +141,18 @@ public class CommonTbManager {
         return aggResp;
     }
 
-    //ztk 根据tkl获取商品id和券id
+    //ztk 订单查询
+    public List<TbkItemOrderZtkQueryResponse.ContentBO>  queryOrder(String orderId) {
+        TbkItemOrderZtkQueryRequest request = new TbkItemOrderZtkQueryRequest();
+        request.setOrderid(orderId);
+        request.setSan_pingtai_id("4");
+        ResultWrapper<TbkItemOrderZtkQueryResponse> result =ztkItemOrderQueryHandler.sendRequestWrapper(request);
+        if (result.isFailure()) {
+            log.error(result.getMessage());
+            return null;
+        }
+        return result.getData().getContent();
+    }
 
 
 }

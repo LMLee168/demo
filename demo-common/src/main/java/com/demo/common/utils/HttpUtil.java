@@ -22,8 +22,12 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
+import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.util.CollectionUtils;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
@@ -31,6 +35,7 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -52,6 +57,42 @@ public class HttpUtil {
 
         URI uri = uriBuilder.build();
         HttpGet httpGet = new HttpGet(uri);
+        CloseableHttpResponse response = null;
+
+        try {
+            response = httpclient.execute(httpGet);
+            if (response.getStatusLine().getStatusCode() == HttpStatus.OK.value()) {
+                result = EntityUtils.toString(response.getEntity(), "UTF-8");
+            }else {
+                log.error("http get request status code error, statusCode = {}", response.getStatusLine().getStatusCode());
+            }
+        } catch (Exception var12) {
+            log.error(var12.getMessage(), var12);
+            throw var12;
+        } finally {
+            if (response != null) {
+                response.close();
+            }
+
+            httpclient.close();
+        }
+
+        return result;
+    }
+
+    public static String doGetJson(String url, Map<String, Object> params) throws IOException, URISyntaxException {
+        String result = null;
+        CloseableHttpClient httpclient = HttpClients.custom().setDefaultRequestConfig(requestConfig).build();
+
+        URIBuilder uriBuilder = new URIBuilder(url);
+        if (!CollectionUtils.isEmpty(params)) {
+            params.forEach((k,v) -> uriBuilder.setParameter(k,v != null ? v.toString() : null));
+        }
+        URI uri = uriBuilder.build();
+        HttpGet httpGet = new HttpGet(uri);
+        httpGet.setHeader("Accept", "application/json");
+        httpGet.setHeader("Content-type", "application/json");
+
         CloseableHttpResponse response = null;
 
         try {

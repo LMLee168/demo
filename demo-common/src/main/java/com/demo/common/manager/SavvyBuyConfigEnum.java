@@ -36,6 +36,8 @@ public enum SavvyBuyConfigEnum {
     //淘客口令解析 id
     AGG_ZTK_TPWD_CONVERT("post", "https://api.zhetaoke.com:10001/api/open_gaoyongzhuanlian_tkl.ashx", ""),
     AGG_ZTK_TPWD_CONVERT_STANDBY("GET", "http://api.zhetaoke.cn:10000/api/open_gaoyongzhuanlian_tkl.ashx", ""),
+    //订单查询
+    ZTK_ITEM_QUERY_ORDER("getJson","https://api.zhetaoke.com:10001/api/open_lianmeng_orderList.ashx","")
     ;
 
     private final String method;
