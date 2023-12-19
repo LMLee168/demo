@@ -1,15 +1,15 @@
 package com.demo.common.manager;
 
 import com.alibaba.fastjson.JSON;
+import com.demo.common.exception.StandardException;
 import com.demo.common.manager.jdhandler.JdGoodsPromotiongoodsinfoQueryHandler;
 import com.demo.common.manager.jdhandler.UnionOpenPromotionBysubunionidGetHandler;
 import com.demo.common.manager.jdhandler.ZheTKUnionOpenPromotionBysubunionidGetHandler;
-import com.demo.common.model.request.jd.PromotionCodeReq;
-import com.demo.common.model.request.jd.UnionOpenGoodsPromotiongoodsinfoQueryRequest;
-import com.demo.common.model.request.jd.UnionOpenPromotionBysubunionidGetRequest;
-import com.demo.common.model.request.jd.ZheTaoKePromotionCodeRequest;
+import com.demo.common.manager.jdhandler.ZtkJingOrderQueryHandler;
+import com.demo.common.model.request.jd.*;
 import com.demo.common.model.response.PromotionAgg;
 import com.demo.common.model.response.jd.*;
+import com.demo.common.utils.DateUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -32,6 +32,8 @@ public class CommonJdManager {
     private UnionOpenPromotionBysubunionidGetHandler unionOpenPromotionBysubunionidGetHandler;
     @Resource
     private ZheTKUnionOpenPromotionBysubunionidGetHandler zheTKUnionOpenPromotionBysubunionidGetHandler;
+    @Resource
+    private ZtkJingOrderQueryHandler ztkJingOrderQueryHandler;
 
     //SKUID查询推广商品 包含价格、佣金、类目等 不包含优惠券信息
     public List<PromotionGoodsResp> jdPromoteQueryWithSku(String skuIds) {
@@ -59,15 +61,15 @@ public class CommonJdManager {
     }
 
 
-    //传入商品详情页链接  获得聚合推广信息 zhetaoke
+    //传入商品详情页链接  获得聚合推广信息 zhetaoke(jing 转链api-)
     public PromotionCodeAggResp getPromoteAggByZhetaok(PromotionCodeReq req) {
         ZheTaoKePromotionCodeRequest request = new ZheTaoKePromotionCodeRequest();
         request.setApp_key("8bb75e5f298849a2901f19b2983708cc");
         request.setPromotionCodeReq(req);
         request.setSignurl("5");
         ZheTaoKeAggPromotionGetResponse result = zheTKUnionOpenPromotionBysubunionidGetHandler.sendRequestWrapper(request);
-        if (result.getStatus() != 200) {
-            log.error(result.getMessage());
+        if (result == null || result.getStatus() != 200) {
+            log.error("result {}", JSON.toJSONString(result));
             return null;
         }
         PromotionAgg aggInfo = result.getContent().get(0);
@@ -87,6 +89,18 @@ public class CommonJdManager {
         aggResp.setUnitPrice(new BigDecimal(aggInfo.getSize()));
 
         return aggResp;
+    }
+
+    //ztk订单查询
+    public void getJingOrderQuery(long start, long end) {
+        if (Long.compare((end-start), DateUtils.ONE_HOUR) >= 0) {
+            throw new StandardException("查询间隔请小于一个小时...");
+        }
+        ZtkJingOrderQueryRequest request = new ZtkJingOrderQueryRequest();
+        request.setStartTime(DateUtils.formatDateTime(start, DateUtils.YYYY_MM_DD_HH_MM_SS));
+        request.setEndTime(DateUtils.formatDateTime(end, DateUtils.YYYY_MM_DD_HH_MM_SS));
+        ZheTaoKeAggPromotionGetResponse response = ztkJingOrderQueryHandler.sendRequestWrapper(request);
+        log.info("新订单查询：{}", JSON.toJSONString(response));
     }
 
 }

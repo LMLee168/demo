@@ -16,6 +16,10 @@ public class StandardException extends RuntimeException implements StandardError
         this.description = description;
     }
 
+    public StandardException(String description) {
+        this.description = description;
+    }
+
     public StandardException(String code, String description) {
         this.code = code;
         this.description = description;

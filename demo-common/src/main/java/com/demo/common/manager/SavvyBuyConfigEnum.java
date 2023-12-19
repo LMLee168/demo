@@ -23,21 +23,24 @@ public enum SavvyBuyConfigEnum {
     //长/段链 -》取商品id
     ITEM_CLICK_EXTRACT("get", "http://gw.api.taobao.com/router/rest", "taobao.tbk.item.click.extract"),
 
+    //淘客口令解析 id
+    AGG_ZTK_TPWD_CONVERT("post", "https://api.zhetaoke.com:10001/api/open_gaoyongzhuanlian_tkl.ashx", ""),
+    AGG_ZTK_TPWD_CONVERT_STANDBY("GET", "http://api.zhetaoke.cn:10000/api/open_gaoyongzhuanlian_tkl.ashx", ""),
+    //订单查询
+    ZTK_TB_ITEM_QUERY_ORDER("getJson","https://api.zhetaoke.com:10001/api/open_lianmeng_orderList.ashx",""),
+
+
+
 
 
     //京东
     PROMOTION_GOODS_INFO("get", "https://api.jd.com/routerjson", "jd.union.open.goods.promotiongoodsinfo.query"),
     PROMOTION_BYSUBUNIONID("get","https://api.jd.com/routerjson","jd.union.open.promotion.bysubunionid.get"),
     GOODS_QUERY("get","https://api.jd.com/routerjson","jd.union.open.goods.query"),
+    ZETAOKE_PROMOTION_BYSUBUNIONID("POST","http://api.zhetaoke.com:20000/api/open_jing_union_open_promotion_byunionid_get.ashx",""),
+    ZTK_JING_ORDER_QUERY("GET","http://api.zhetaoke.com:20000/api/open_jing_union_openz_order_row_query.ashx",""),
+    ZTK_JING_BATCH_GAOYONGZHUANLIAN("post","https://api.zhetaoke.com:10001/api/open_gaoyongzhuanlian_tkl_piliang.ashx",""),
 
-    //zhetaoke GET/POST
-    ZETAOKE_PROMOTION_BYSUBUNIONID("GET","http://api.zhetaoke.com:20000/api/open_jing_union_open_promotion_byunionid_get.ashx",""),
-
-    //淘客口令解析 id
-    AGG_ZTK_TPWD_CONVERT("post", "https://api.zhetaoke.com:10001/api/open_gaoyongzhuanlian_tkl.ashx", ""),
-    AGG_ZTK_TPWD_CONVERT_STANDBY("GET", "http://api.zhetaoke.cn:10000/api/open_gaoyongzhuanlian_tkl.ashx", ""),
-    //订单查询
-    ZTK_ITEM_QUERY_ORDER("getJson","https://api.zhetaoke.com:10001/api/open_lianmeng_orderList.ashx","")
     ;
 
     private final String method;

@@ -23,11 +23,6 @@ public class SavvyBuyJd implements SavvyBuyProvider{
     public String queryCoupon(String content) {
 
         String skuId = getSkuId(content);
-//        List<PromotionGoodsResp> goods = commonJdManager.jdPromoteQueryWithSku(skuId);
-//        if (CollectionUtils.isEmpty(goods)) {
-//            return "";
-//        }
-//        PromotionGoodsResp resp = goods.get(0);
         PromotionCodeReq req = new PromotionCodeReq();
         req.setMaterialId(skuId);
         PromotionCodeAggResp aggResp = commonJdManager.getPromoteAggByZhetaok(req);

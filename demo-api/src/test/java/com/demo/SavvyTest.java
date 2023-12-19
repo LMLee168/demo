@@ -31,15 +31,14 @@ public class SavvyTest extends BaseTest{
 
 //        System.out.println(JSON.toJSONString(commonTbManager.itemClickExtract("https://m.tb.cn/h.UwFjVpW?tk=0HshdpTt27g CZ3457")));
 
-//        PromotionCodeReq req = new PromotionCodeReq();
-//        req.setMaterialId("10070745581287999");
-//        System.out.println(JSON.toJSONString(commonJdManager.getPromoteAggByZhetaok(req)));
+        PromotionCodeReq req = new PromotionCodeReq();
+        req.setMaterialId("10084035274744");
+        System.out.println(JSON.toJSONString(commonJdManager.getPromoteAggByZhetaok(req)));
 
-//        System.out.println(JSON.toJSONString(commonTbManager.tpwdConvertAggByZtk("【拍1件】立白洗衣液10斤\n" +
-//                "(X7DIWXqhW5a)/ AC01/")));
+//        System.out.println(JSON.toJSONString(commonTbManager.tpwdConvertAggByZtk("https://m.tb.cn/h.5nqzMgc?tk=QUt0W58QIur CZ0001 ")));
 
-//        System.out.println(JSON.toJSONString(commonJdManager.jdPromoteQueryWithSku("10070745581287")));
-        System.out.println(JSON.toJSONString(commonTbManager.queryOrder("3596737647696987837")));
+//        System.out.println(JSON.toJSONString(commonJdManager.jdPromoteQueryWithSku("10082064398107")));
+//        System.out.println(JSON.toJSONString(commonTbManager.queryOrder("3596737647696987837")));
 
     }
 
