@@ -100,7 +100,7 @@ public class CommonTbManager {
         return result.getData();
     }
 
-    //从淘宝客推广长链接或短链接中解析出open_iid(即识别商品的id)。
+    //从tbk推广长链接或短链接中解析出open_iid(即识别商品的id)。
     public TbkItemClickExtractResponse itemClickExtract(String url) {
         TbkItemClickExtractRequest request = new TbkItemClickExtractRequest();
         request.setClick_url(url);

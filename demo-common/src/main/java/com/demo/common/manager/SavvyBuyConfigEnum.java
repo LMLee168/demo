@@ -41,6 +41,10 @@ public enum SavvyBuyConfigEnum {
     ZTK_JING_ORDER_QUERY("GET","http://api.zhetaoke.com:20000/api/open_jing_union_openz_order_row_query.ashx",""),
     ZTK_JING_BATCH_GAOYONGZHUANLIAN("post","https://api.zhetaoke.com:10001/api/open_gaoyongzhuanlian_tkl_piliang.ashx",""),
 
+
+    //douyin
+    ZTK_DY_PRODUCT_SHARE("", "", ""),
+
     ;
 
     private final String method;

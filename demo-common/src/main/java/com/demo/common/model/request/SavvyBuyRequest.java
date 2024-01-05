@@ -28,6 +28,10 @@ public class SavvyBuyRequest {
      * 签名
      */
     private String sign_method;
+    /**
+     * 标准json类型，里面是业务参数按照参数名的字符串大小排序具体参数值，参考每个接口的参数表
+     */
+    private String param_json;
     private String sign;
     private String format;
     private Boolean simplify;

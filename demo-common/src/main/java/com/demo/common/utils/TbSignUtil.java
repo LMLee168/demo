@@ -1,14 +1,10 @@
 package com.demo.common.utils;
 
 import com.alibaba.fastjson.JSON;
-import com.demo.common.model.request.jd.UnionOpenGoodsPromotiongoodsinfoQueryRequest;
-import com.demo.common.model.response.jd.UnionOpenGoodsPromotiongoodsinfoQueryResponse;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.digest.DigestUtils;
-import org.apache.commons.lang3.StringUtils;
-import org.omg.CORBA.PRIVATE_MEMBER;
 
 import javax.crypto.Mac;
 import javax.crypto.SecretKey;
@@ -31,13 +27,17 @@ public class TbSignUtil {
 
     // TOP服务地址，正式环境需要设置为http://gw.api.taobao.com/router/rest
     private static final String serverUrl = "http://gw.api.taobao.com/router/rest";
-    private static final String appKey = "34396407"; // 可替换为您的应用的appKey
-    private static final String appSecret = "23843925ae2477cd2918102367d2c2eb"; // 可替换为您的应用的appSecret
+    private static final String tbAppKey = "34396407"; // 可替换为您的应用的appKey
+    private static final String tbSec = "23843925ae2477cd2918102367d2c2eb"; // 可替换为您的应用的appSecret
     private static final String sessionKey = ""; // 必须替换为授权得到的真实有效sessionKey
 
     //jd
     private static final String jdApKEY ="c70a395a3bbd43d81ac620b414a800f9";
     private static final String jd_sec = "cd2c2c8d1bb54bacb743c430a58e8f09";
+
+    //dy
+    private static final String dyApKEY ="c70a395a3bbd43d81ac620b414a800f9";
+    private static final String dy_sec = "cd2c2c8d1bb54bacb743c430a58e8f09";
 
     /**
      * 对TOP请求进行签名。
@@ -133,7 +133,7 @@ public class TbSignUtil {
 
     public static Map<String, Object> getTbCommonItem(Map<String, Object> params){
         // 公共参数
-        params.put("app_key", appKey);
+        params.put("app_key", tbAppKey);
         params.put("session", sessionKey);
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         params.put("timestamp", df.format(new Date()));
@@ -142,7 +142,7 @@ public class TbSignUtil {
         params.put("sign_method", SIGN_METHOD_HMAC);
         // 签名参数
         try {
-            params.put("sign", signTopRequest(params, appSecret, SIGN_METHOD_HMAC));
+            params.put("sign", signTopRequest(params, tbSec, SIGN_METHOD_HMAC));
         } catch (IOException e) {
             throw new RuntimeException("获取签名失败，稍后再试");
         }
@@ -186,4 +186,26 @@ public class TbSignUtil {
     }
 
 
+    public static Map<String, Object> getDyCommonItem(Map<String, Object> queryParams, String apiMethod){
+
+        Map<String, Object> params = Maps.newHashMap();
+        params.put("access_token", sessionKey);
+        params.put("app_key", dyApKEY);
+        params.put("method",apiMethod);
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        params.put("timestamp", df.format(new Date()));
+        params.put("sign_method", SIGN_METHOD_MD5);
+        params.put("v", "1.0");
+        params.put("param_json",JSON.toJSONString(queryParams));
+
+        log.info("参数 {}", JSON.toJSONString(params));
+        // 签名参数
+        try {
+            params.put("sign", jdSign(params));
+        } catch (Exception e) {
+            throw new RuntimeException("获取签名失败，稍后再试");
+        }
+        // 请用API
+        return params;
+    }
 }
