@@ -1,17 +1,0 @@
-
->
-java:S1643"Use a StringBuilder instead.(ÐÐ³Þüÿÿÿÿ8™¡…Œ…1
-t
-java:S3008
-"RRename this field "CHARSET" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ‚‚Ëþÿÿÿÿ8¡¡…Œ…1
-r
-java:S3008"URename this field "BLOCK_SIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùÄÐî8¡¡…Œ…1
-W
-java:S1118	":Add a private constructor to hide the implicit public one.(åéÅŒ8¥¡…Œ…1
-\
-java:S4719
-":Replace Charset.forName() call with StandardCharsets.UTF_8(œ‚‚Ëþÿÿÿÿ8¦¡…Œ…1
-<
-java:S2129" Remove this "String" constructor(¦ú×D8ª¡…Œ…1
-H
-java:S1905)"&Remove this unnecessary cast to "int".(Ïž­üÿÿÿÿ8«¡…Œ…1

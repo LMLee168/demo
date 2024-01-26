@@ -1,7 +1,0 @@
-
-m	java:S116"RRename this field "CORP_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ù‡8†ÙªŒ…1
-q	java:S116"PRename this field "TOKEN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶„ıÕşÿÿÿÿ8‡ÙªŒ…1
-w	java:S116"[Rename this field "ENCODING_AES_KEY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÁ¤8‰ÙªŒ…1
-{
-java:S1149:"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ñ ÊH8‹ÙªŒ…1
-]	java:S1251"<This block of commented-out lines of code should be removed.(ıÜêùûÿÿÿÿ8ë©ÒŒ…1

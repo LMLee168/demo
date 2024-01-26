@@ -1,8 +1,0 @@
-
-w	java:S116"VRename this field "pwd_content" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯øìÂşÿÿÿÿ8¸Ğ¼†‡1
-u	java:S116"TRename this field "adzone_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øÑóØøÿÿÿÿ8¸Ğ¼†‡1
-p	java:S116"TRename this field "ucrowd_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ÷ÖÆ8¸Ğ¼†‡1
-r	java:S116"VRename this field "relation_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ­ò8ä½†‡1
-M
-java:S2160
-"+Override the "equals" method in this class.(¸ù×îıÿÿÿÿ8¹Ğ¼†‡1

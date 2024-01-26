@@ -1,10 +1,0 @@
-
-b	java:S1124"FDefine and throw a dedicated exception instead of using a generic one.(™ü¯Ü8²®ë„1
-b	java:S1121"FDefine and throw a dedicated exception instead of using a generic one.(Üô§Ğ8³®ë„1
-^
-java:S2175#"AA "Map<String, List>" cannot contain a "File" in a "String" type.(öÓÿ“8Æ®ë„1
-W	java:S899<";Do something with the "boolean" value returned by "delete".(¹Ñ÷Ü8Î®ë„1
-k
-java:S4042<"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(¹Ñ÷Ü8Î®ë„1
-\
-java:S1128":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ8Ï®ë„1

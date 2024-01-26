@@ -1,9 +1,0 @@
-
-s	java:S116"RRename this field "num_iid" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹Òúÿÿÿÿ8”íÁ†‡1
-u	java:S116"TRename this field "click_url" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Àî•ùÿÿÿÿ8§ˆÆ†‡1
-u	java:S116"TRename this field "seller_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Åõ¸Äşÿÿÿÿ8‘ìÆ†‡1
-q	java:S116"URename this field "origin_url" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿİÈÀ8÷ïÇ†‡1
-p	java:S116"URename this field "origin_pid" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù¸¥x8¢åÈ†‡1
-x	java:S116"WRename this field "biz_scene_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ô³˜Ëüÿÿÿÿ8Ö½Ê†‡1
-t	java:S116"SRename this field "url_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ÌüÒşÿÿÿÿ8Ù™Í†‡1
-p	java:S116"TRename this field "short_url" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Úòßğ8ßÕÓ†‡1

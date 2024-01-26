@@ -1,20 +1,0 @@
-
-n	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®…Ï¿8×¸ ‰…1
-s	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷ªÇÁùÿÿÿÿ8æ¸ ‰…1
-Z
-java:S4973Ë"<Strings and Boxed types should be compared using "equals()".(íñã·8ç¸ ‰…1
-t
-java:S3008"RRename this field "CHARSET" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ‚‚Ëşÿÿÿÿ8‚¹ ‰…1
-|
-java:S1149L"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰8„¹ ‰…1
-\
-java:S4719":Replace Charset.forName() call with StandardCharsets.UTF_8(œ‚‚Ëşÿÿÿÿ8†¹ ‰…1
-:
-java:S2119K"Save and re-use this "Random".(¼İÅf8¹ ‰…1
-O
-java:S1659",Declare "from_receiveid" on a separate line.(÷ªÇÁùÿÿÿÿ8’¹ ‰…1
-k	java:S100Æ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ¶¼Ö8˜¹ ‰…1
-Y	java:S125Ñ"<This block of commented-out lines of code should be removed.(óƒÊ€8š¹ ‰…1
-p	java:S100ç"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êµ¡Îüÿÿÿÿ8š¹ ‰…1
-Y	java:S125ò"<This block of commented-out lines of code should be removed.(Åùóº8›¹ ‰…1
-k	java:S100‡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦‰óå8œ¹ ‰…1
