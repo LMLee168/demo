@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>demo</groupId>
-    <artifactId>demo</artifactId>
+    <groupId>unicorn-mp</groupId>
+    <artifactId>mp</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <modules>
-        <module>demo-api</module>
-        <module>demo-common</module>
-        <module>demo-schedule</module>
+        <module>unicorn-mp-api</module>
+        <module>unicorn-mp-common</module>
+        <module>unicorn-mp-schedule</module>
     </modules>
 
     <parent>
@@ -34,18 +34,18 @@
 
 
             <dependency>
-                <groupId>demo</groupId>
-                <artifactId>demo-common</artifactId>
+                <groupId>unicorn-mp</groupId>
+                <artifactId>unicorn-mp-common</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>demo</groupId>
-                <artifactId>demo-api</artifactId>
+                <groupId>unicorn-mp</groupId>
+                <artifactId>unicorn-mp-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>demo</groupId>
-                <artifactId>demo-schedule</artifactId>
+                <groupId>unicorn-mp</groupId>
+                <artifactId>unicorn-mp-schedule</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <!-- jd联盟 -->
