@@ -1,7 +1,7 @@
 package unicorn.mp.api.manager.savvybuy;
 
-import com.demo.common.manager.CommonTbManager;
-import com.demo.common.model.response.jd.PromotionCodeAggResp;
+import unicorn.mp.common.manager.CommonTbManager;
+import unicorn.mp.common.model.response.jd.PromotionCodeAggResp;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 

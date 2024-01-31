@@ -2,8 +2,8 @@ package unicorn.mp.api.controller;
 
 import unicorn.mp.api.manager.LocationManager;
 import unicorn.mp.api.model.response.CityResponse;
-import com.demo.common.enumation.ResponseUtil;
-import com.demo.common.utils.ResultWrapper;
+import unicorn.mp.common.enumation.ResponseUtil;
+import unicorn.mp.common.utils.ResultWrapper;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

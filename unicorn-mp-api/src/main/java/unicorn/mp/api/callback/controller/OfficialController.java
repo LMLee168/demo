@@ -13,7 +13,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.Map;
 
-import static com.demo.common.utils.XmlUtils.xmlBody2map;
+import static unicorn.mp.common.utils.XmlUtils.xmlBody2map;
 
 /**
  * 公众号回调

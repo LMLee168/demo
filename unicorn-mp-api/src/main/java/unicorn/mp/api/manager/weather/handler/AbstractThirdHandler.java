@@ -3,14 +3,14 @@ package unicorn.mp.api.manager.weather.handler;
 import com.alibaba.fastjson.JSON;
 import unicorn.mp.api.model.request.ThirdRequest;
 import unicorn.mp.api.model.response.ThirdResponse;
-import com.demo.common.exception.StandardException;
-import com.demo.common.utils.HttpUtil;
+import unicorn.mp.common.exception.StandardException;
+import unicorn.mp.common.utils.HttpUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpMethod;
 
 import java.util.Map;
 
-import static com.demo.common.enumation.ResponseError.SYSTEM_ERROR;
+import static unicorn.mp.common.enumation.ResponseError.SYSTEM_ERROR;
 
 @Slf4j
 public abstract class AbstractThirdHandler<Request extends ThirdRequest, Response extends ThirdResponse> implements ThirdHandler<Request, Response> {

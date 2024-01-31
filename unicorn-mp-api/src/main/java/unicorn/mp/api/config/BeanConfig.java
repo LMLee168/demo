@@ -1,6 +1,6 @@
 package unicorn.mp.api.config;
 
-import com.demo.common.cache.CacheTemplate;
+import unicorn.mp.common.cache.CacheTemplate;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

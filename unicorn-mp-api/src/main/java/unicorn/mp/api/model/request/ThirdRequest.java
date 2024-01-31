@@ -1,6 +1,6 @@
 package unicorn.mp.api.model.request;
 
-import com.demo.common.model.bo.BaseDO;
+import unicorn.mp.common.model.bo.BaseDO;
 import lombok.Getter;
 import lombok.Setter;
 

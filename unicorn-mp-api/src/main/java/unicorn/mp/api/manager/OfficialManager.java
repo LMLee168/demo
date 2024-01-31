@@ -2,10 +2,10 @@ package unicorn.mp.api.manager;
 
 import unicorn.mp.api.manager.savvybuy.SavvyBuyChannelEnum;
 import unicorn.mp.api.manager.savvybuy.SavvyBuyProvider;
-import com.demo.common.enumation.OfficialMsgTypeEnum;
-import com.demo.common.model.request.official.ReplyTextRequest;
-import com.demo.common.utils.DateUtils;
-import com.demo.common.utils.XmlUtils;
+import unicorn.mp.common.enumation.OfficialMsgTypeEnum;
+import unicorn.mp.common.model.request.official.ReplyTextRequest;
+import unicorn.mp.common.utils.DateUtils;
+import unicorn.mp.common.utils.XmlUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;

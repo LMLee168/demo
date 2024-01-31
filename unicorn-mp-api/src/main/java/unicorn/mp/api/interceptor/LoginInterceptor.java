@@ -1,13 +1,13 @@
 package unicorn.mp.api.interceptor;
 
 import com.alibaba.fastjson.JSONObject;
-import com.demo.common.encrypt.IgnoreLogin;
-import com.demo.common.enumation.ResponseError;
-import com.demo.common.model.bo.DeviceInfoBO;
-import com.demo.common.utils.ErrorResponseGenerator;
-import com.demo.common.utils.NetworkUtil;
-import com.demo.common.utils.ResultWrapper;
-import com.demo.common.utils.UserStore;
+import unicorn.mp.common.encrypt.IgnoreLogin;
+import unicorn.mp.common.enumation.ResponseError;
+import unicorn.mp.common.model.bo.DeviceInfoBO;
+import unicorn.mp.common.utils.ErrorResponseGenerator;
+import unicorn.mp.common.utils.NetworkUtil;
+import unicorn.mp.common.utils.ResultWrapper;
+import unicorn.mp.common.utils.UserStore;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.method.HandlerMethod;

@@ -1,7 +1,7 @@
 package unicorn.mp.api.interceptor;
 
 import com.alibaba.fastjson.JSONObject;
-import com.demo.common.encrypt.JsonParam;
+import unicorn.mp.common.encrypt.JsonParam;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.core.MethodParameter;

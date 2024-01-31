@@ -1,6 +1,6 @@
 package com.demo;
 
-import com.demo.common.cache.CacheTemplate;
+import unicorn.mp.common.cache.CacheTemplate;
 import org.junit.Test;
 
 import javax.annotation.Resource;

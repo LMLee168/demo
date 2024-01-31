@@ -5,7 +5,7 @@ import com.alibaba.fastjson.support.config.FastJsonConfig;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 import unicorn.mp.api.interceptor.JsonParamArgumentResolver;
 import unicorn.mp.api.interceptor.LoginInterceptor;
-import com.demo.common.provacy.PrivacyFilter;
+import unicorn.mp.common.provacy.PrivacyFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;

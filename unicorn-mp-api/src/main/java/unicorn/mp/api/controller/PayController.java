@@ -1,7 +1,7 @@
 package unicorn.mp.api.controller;
 
-import com.demo.common.enumation.ResponseUtil;
-import com.demo.common.utils.ResultWrapper;
+import unicorn.mp.common.enumation.ResponseUtil;
+import unicorn.mp.common.utils.ResultWrapper;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
