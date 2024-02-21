@@ -32,7 +32,7 @@ public class SavvyTest extends BaseTest{
 //        System.out.println(JSON.toJSONString(commonTbManager.itemClickExtract("https://m.tb.cn/h.UwFjVpW?tk=0HshdpTt27g CZ3457")));
 
         PromotionCodeReq req = new PromotionCodeReq();
-        req.setMaterialId("https://3.cn/1UC0-xWc");
+        req.setMaterialId("https://3.cn/1-V5Neva");
         System.out.println(JSON.toJSONString(commonJdManager.getPromoteAggByZhetaok(req)));
 
 //        System.out.println(JSON.toJSONString(commonTbManager.tpwdConvertAggByZtk("JxNFWTcR8fy CZ0001 ")));

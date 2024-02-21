@@ -6,9 +6,9 @@ import unicorn.mp.common.manager.jdhandler.JdGoodsPromotiongoodsinfoQueryHandler
 import unicorn.mp.common.manager.jdhandler.UnionOpenPromotionBysubunionidGetHandler;
 import unicorn.mp.common.manager.jdhandler.ZheTKUnionOpenPromotionBysubunionidGetHandler;
 import unicorn.mp.common.manager.jdhandler.ZtkJingOrderQueryHandler;
-import com.demo.common.model.request.jd.*;
+import unicorn.mp.common.model.request.jd.*;
 import unicorn.mp.common.model.response.PromotionAgg;
-import com.demo.common.model.response.jd.*;
+import unicorn.mp.common.model.response.jd.*;
 import unicorn.mp.common.utils.DateUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

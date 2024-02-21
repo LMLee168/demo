@@ -6,11 +6,11 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpEntity;
 import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.junit4.SpringRunner;
-import unicorn.mp.api.DemoApplication;
+import unicorn.mp.api.MpApiApplication;
 
 @TestExecutionListeners(listeners = {TestListener.class},mergeMode = TestExecutionListeners.MergeMode.MERGE_WITH_DEFAULTS)
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = {DemoApplication.class}, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(classes = {MpApiApplication.class}, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class BaseTest {
 
     protected HttpEntity<?> httpEntity;

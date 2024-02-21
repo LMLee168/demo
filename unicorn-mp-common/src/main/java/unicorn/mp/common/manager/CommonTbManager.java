@@ -1,11 +1,11 @@
 package unicorn.mp.common.manager;
 
-import com.demo.common.manager.tbhandler.*;
-import com.demo.common.model.request.tb.*;
+import unicorn.mp.common.manager.tbhandler.*;
+import unicorn.mp.common.model.request.tb.*;
 import unicorn.mp.common.manager.tbhandler.*;
 import unicorn.mp.common.model.response.PromotionAgg;
-import com.demo.common.model.response.jd.*;
-import com.demo.common.model.response.tb.*;
+import unicorn.mp.common.model.response.jd.*;
+import unicorn.mp.common.model.response.tb.*;
 import unicorn.mp.common.utils.ResultWrapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
