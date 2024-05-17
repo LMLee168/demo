@@ -16,7 +16,7 @@ import javax.annotation.Resource;
  * 天气查询
  */
 @RestController
-@RequestMapping("/demo/v1/weather")
+@RequestMapping("/unicorn/v1/weather")
 public class WeatherController {
 
     @Resource

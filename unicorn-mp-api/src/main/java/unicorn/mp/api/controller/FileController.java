@@ -17,7 +17,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 @RestController
-@RequestMapping("/demo/v1/file")
+@RequestMapping("/unicorn/v1/file")
 public class FileController {
 
 

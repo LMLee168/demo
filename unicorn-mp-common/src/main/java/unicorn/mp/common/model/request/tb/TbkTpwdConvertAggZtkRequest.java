@@ -25,9 +25,9 @@ public class TbkTpwdConvertAggZtkRequest extends SavvyBuyRequest {
     /**
      * 对应ztk里授权的id
      */
-    private String sid= "165690";
+    private String sid= "165691";
     //渠道关系ID，仅适用于渠道推广场景。
-    private String relationId;
+    private String relationId ;
     //会员运营ID
     private String specialId;
     /**

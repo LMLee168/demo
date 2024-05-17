@@ -45,6 +45,9 @@ public enum SavvyBuyConfigEnum {
     //douyin
     ZTK_DY_PRODUCT_SHARE("", "", ""),
 
+    //pdd
+    ZTK_PDD_ZHUANLIAN_NEW("GET","https://api.zhetaoke.com:10001/api/open_pdd_zhuanlian_new.ashx",""),
+
     ;
 
     private final String method;

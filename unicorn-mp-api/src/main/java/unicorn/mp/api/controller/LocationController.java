@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 
 @RestController
-@RequestMapping("/demo/v1/location")
+@RequestMapping("/unicorn/v1/location")
 public class LocationController {
 
     @Resource

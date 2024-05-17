@@ -18,7 +18,7 @@ import static unicorn.mp.common.utils.XmlUtils.xmlBody2map;
  */
 @Slf4j
 @RestController
-@RequestMapping("/demo/v1/workwx")
+@RequestMapping("/unicorn/v1/workwx")
 public class WorkWxController {
 
     @Value("${wecom.corpid}")

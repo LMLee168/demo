@@ -20,7 +20,7 @@ import static unicorn.mp.common.utils.XmlUtils.xmlBody2map;
  */
 @Slf4j
 @RestController
-@RequestMapping("/demo/v1/official")
+@RequestMapping("/unicorn/v1/official")
 public class OfficialController {
 
     public static final String SUCCESS = "success";
